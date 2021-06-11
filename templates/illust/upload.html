@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'illust/css/style.css' %}">
+
+</head>
+<body>
+    <a href="{% url 'illust:index' %}">ホーム</a>
+
+        <div class="post_area">
+            <form action="" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="text">
+                    <input type="text" name="title" placeholder="タイトル">
+                </div>
+
+                <textarea class="ui10-textarea_circle" cols="60" rows="10" name="description" placeholder="説明"></textarea>
+                <div>
+                    <input type="file" name="file">
+                </div>
+                <div><input type="submit" value="投稿"></div>
+            </form>
+
+        </div>
+
+        {# 受け取ったdesingsをforループで1つずつ取り出し、表示させる。 #}
+
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+a {
+    text-decoration:none;
+}
+body{
+    margin:0;
+    background:gray;
+}
+
+header {
+    background:#231916;
+    color:white;
+    height:3rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.header_frame {
+    width:calc(100% / 4);
+    text-align:center;
+}
+.header_content {
+    margin:0 0.5rem;
+    color:white;
+    font-weight:bold;
+}
+
+.inputs{
+	margin: 10rem;
+	padding: 5rem;
+
+}
+
+
+
+.category_header{
+    color:white;
+    margin:1rem 0;
+    font-weight:bold;
+    font-size:1.5rem;
+}
+
+.preview_control_area{
+    position:relative;
+}
+
+.preview_data_area{
+    margin:0.5rem 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    word-break: break-all;
+}
+
+.data_preview_frame{
+    width: calc(100% / 5);
+    display: inline-block;
+    white-space:normal;
+    vertical-align:middle;
+}
+
+/* 画面幅に合わせて個数を調整 */
+@media (max-width:1500px){
+    .data_preview_frame{
+        width: calc(100% / 4);
+    }
+}
+@media (max-width:1200px){
+    .data_preview_frame{
+        width: calc(100% / 3);
+    }
+}
+@media (max-width:1000px){
+    .data_preview_frame{
+        width: calc(100% / 2);
+    }
+}
+@media (max-width:600px){
+    .data_preview_frame{
+        width: calc(100% / 1);
+    }
+}
+
+
+
+
+
+.data_preview_content {
+    /*
+    height:15rem;
+    */
+
+    margin:0 0.5rem;
+    padding:0.5rem;
+    background:white;
+
+    font-size:1.5rem;
+    font-weight:bold;
+
+    overflow:hidden;
+
+    text-align:center;
+}
+
+
+
+
+
+
+
+
+.data_out_content{
+    margin:0.5rem 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    word-break: break-all;
+}
+
+.data_in_content{
+    display: inline-block;
+    white-space:normal;
+    vertical-align:middle;
+    white-space: nowrap;
+
+}
+
+.post_area{
+    margin: 1rem;
+}
+
+.control_button {
+    background: white;
+    border: solid 0.1rem black;
+    border-radius: 0.25rem;
+    padding: 1.5rem;
+    margin: 0 0.25rem;
+    cursor: pointer;
+    opacity: 0.25;
+    transition: 0.2s;
+}
+
+.control_button:hover {
+    background:black;
+    color:white;
+
+    opacity:0.8;
+    transition:0.2s;
+}
+
+.previous_button {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.next_button {
+    position:absolute;
+    top:50%;
+    right:0;
+    transform:translateY(-50%);
+}
+
+.ui10-textarea_circle {
+    width: 50%;
+    border: solid 0.2rem deepskyblue;
+    border-radius: 0.5rem;
+    background: white;
+    font-family: monospace;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    max-height: 100%;
+    resize: none;
+    box-sizing: border-box;
+}
+.ui10-textarea_circle:focus {
+    box-shadow:0px 0px 5px 2px  deepskyblue;
+    outline:none;;
